@@ -1,10 +1,18 @@
+/* Import Google Fonts */
+
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Reset margins, padding, and box-sizing */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Spartan", sans-serif;
 }
+
+
+/* Smooth scrolling */
 
 html {
     scroll-behavior: smooth;
@@ -13,11 +21,17 @@ html {
 
 /* Global Styles */
 
+
+/* Styling for h1 tags */
+
 h1 {
     font-size: 40px;
     line-height: 50px;
     color: #222;
 }
+
+
+/* Styling for h2 tags */
 
 h2 {
     font-size: 30px;
@@ -25,15 +39,24 @@ h2 {
     color: #222;
 }
 
+
+/* Styling for h4 tags */
+
 h4 {
     font-size: 15px;
     color: #222;
 }
 
+
+/* Styling for h6 tags */
+
 h6 {
     font-weight: 700;
     font-size: 12px;
 }
+
+
+/* Styling for paragraph tags */
 
 p {
     font-size: 16px;
@@ -41,17 +64,29 @@ p {
     margin: 15px 0 20px 0;
 }
 
+
+/* Padding for sections with class section-p1 */
+
 .section-p1 {
     padding: 40px 80px;
 }
+
+
+/* Margin for sections with class section-m1 */
 
 .section-m1 {
     margin: 40px 0;
 }
 
+
+/* Full width for body */
+
 body {
     width: 100%;
 }
+
+
+/* Header styling */
 
 #header {
     display: flex;
@@ -66,17 +101,26 @@ body {
     left: 0;
 }
 
+
+/* Navbar styling */
+
 #navbar {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+
+/* Navbar list items styling */
+
 #navbar li {
     list-style: none;
     padding: 0 20px;
     position: relative;
 }
+
+
+/* Navbar links styling */
 
 #navbar li a {
     text-decoration: none;
@@ -86,10 +130,16 @@ body {
     transition: 0.3s ease;
 }
 
+
+/* Navbar links hover and active state styling */
+
 #navbar li a:hover,
 #navbar li a.active {
     color: #088178;
 }
+
+
+/* Navbar links underline on hover and active state */
 
 #navbar li a.active::after,
 #navbar li a:hover::after {
@@ -103,28 +153,29 @@ body {
 }
 
 
-/*Home Page*/
+/* Home Page */
+
+
+/* Display section styling */
 
 #disp {
     background-image: url("images/disp2.jpg");
     height: 90vh;
     width: 100%;
     background-size: cover;
-    /* Ensures the image covers the entire background */
     background-position: right center;
-    /* Aligns the image to the right side */
     background-repeat: no-repeat;
-    /* Prevents the image from repeating */
     padding: 0 80px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     position: relative;
-    /* Ensure z-index works */
     z-index: 1;
-    /* Ensures content appears above the background image */
 }
+
+
+/* Display section background overlay */
 
 #disp::before {
     content: "";
@@ -134,23 +185,27 @@ body {
     width: 100%;
     height: 100%;
     background-color: #E3E6F3;
-    /* Match the background color of the page */
     opacity: 0.8;
-    /* Adjust opacity to blend with the background */
     z-index: -1;
-    /* Places this behind the content */
 }
+
+
+/* Display section h4 styling */
 
 #disp h4 {
     padding-bottom: 15px;
     color: #1a1a1a;
-    /* Text color */
 }
+
+
+/* Display section h1 styling */
 
 #disp h1 {
     color: #088178;
-    /* Heading color */
 }
+
+
+/* Display section button styling */
 
 #disp button {
     background-image: url("images/button.png");
@@ -164,12 +219,18 @@ body {
     font-weight: 700;
 }
 
+
+/* Feature section styling */
+
 #feature {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+
+/* Feature box styling */
 
 #feature .fe-box {
     width: 180px;
@@ -181,14 +242,23 @@ body {
     margin: 15px 0;
 }
 
+
+/* Feature box hover effect */
+
 #feature .fe-box:hover {
     box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
 }
+
+
+/* Feature box image styling */
 
 #feature .fe-box img {
     width: 100%;
     margin-bottom: 10px;
 }
+
+
+/* Feature box h6 styling */
 
 #feature .fe-box h6 {
     display: inline-block;
@@ -196,8 +266,10 @@ body {
     line-height: 1;
     border-radius: 4px;
     color: #088178;
-    background-color: #fddde4;
 }
+
+
+/* Specific background colors for different feature boxes */
 
 #feature .fe-box:nth-child(2) h6 {
     background-color: #cdebbc;
@@ -219,9 +291,15 @@ body {
     background-color: #fff2e5;
 }
 
+
+/* Product section styling */
+
 #product1 {
     text-align: center;
 }
+
+
+/* Product card styling */
 
 #product1 .pro {
     width: 5%;
@@ -230,6 +308,9 @@ body {
     border: 1px solid #cce7d0;
     border-radius: 25px;
 }
+
+
+/* Product card image styling */
 
 #product1 .pro img {
     width: 100%;
